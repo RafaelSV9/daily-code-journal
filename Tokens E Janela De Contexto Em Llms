@@ -1,0 +1,93 @@
+# 📘 Tokens e Janela de Contexto em Modelos de Linguagem (LLMs)
+
+Este registro faz parte do meu **Daily Code Journal**, com o objetivo de consolidar conceitos fundamentais sobre como funcionam os modelos de linguagem modernos (LLMs), como ChatGPT, Gemini, Claude, entre outros.
+
+---
+
+## ✅ O que são Tokens?
+
+Tokens são as **menores unidades de texto** que um modelo de linguagem utiliza para processar informações. Eles podem ser:
+
+* Palavras inteiras
+* Partes de palavras
+* Símbolos
+* Caracteres individuais
+
+### Exemplos:
+
+* "computador" → pode ser 1 token
+* "programação" → pode ser dividida em `programa` + `ção`
+* "AI" → pode ser 1 token
+
+Os modelos **não leem texto como humanos**, eles interpretam tudo em forma de tokens.
+
+---
+
+## ✅ O que é a Janela de Contexto?
+
+A **janela de contexto** define **quantos tokens o modelo consegue processar por vez**, considerando:
+
+* A entrada do usuário
+* O histórico da conversa
+* A resposta gerada
+
+Ela funciona como uma espécie de **memória temporária** do modelo.
+
+### Exemplo prático:
+
+Se um modelo possui uma janela de contexto de 8.000 tokens, isso significa que toda a conversa + resposta **não pode ultrapassar esse limite ao mesmo tempo**.
+
+---
+
+## ✅ O que acontece quando o limite da janela é atingido?
+
+Quando o limite é alcançado:
+
+* ✅ Os **tokens mais antigos são descartados**
+* ✅ Os **tokens mais novos entram no lugar**
+* ❌ O modelo **não armazena memória permanente**
+
+Isso significa que o modelo pode **"esquecer" informações antigas da conversa** conforme novas mensagens são enviadas.
+
+---
+
+## ✅ Importância de um Prompt Claro e Objetivo
+
+Uma instrução clara evita:
+
+* ❌ Interpretações erradas
+* ❌ Respostas genéricas
+* ❌ Perda de tempo e tokens
+
+Um bom prompt deve conter:
+
+* Contexto correto
+* Objetivo claro
+* Formato esperado da resposta
+
+### Exemplo:
+
+❌ Prompt ruim:
+
+> "Me ajude com código"
+
+✅ Prompt bom:
+
+> "Crie uma função em Python que valide se um número é par ou ímpar e retorne o resultado em texto."
+
+---
+
+## ✅ Conclusão
+
+Compreender **tokens, janela de contexto e a importância dos prompts** é essencial para:
+
+* Usar LLMs de forma profissional
+* Oportunizar melhores respostas
+* Evitar desperdício de recursos
+* Criar aplicações mais eficientes com IA
+
+---
+
+📅 *Registro feito no Daily Code Journal*
+
+Se você estuda IA, este é um dos conceitos mais importantes para dominar logo no início da jornada.
